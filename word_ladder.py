@@ -14,7 +14,7 @@ def word_ladder(start_word, end_word, dictionary_file='words5.dict'):
     all_words = []
     full_str = f.read()
     for i in range(0, len(full_str), 6):
-        all_words.append(full_str[i : i+5])
+        all_words.append(full_str[i: i + 5])
     stack = []
     stack.append(start_word)
     all_words.remove(start_word)
